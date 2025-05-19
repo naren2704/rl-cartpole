@@ -16,8 +16,7 @@ ii) 1: Push cart to the right
 
 ## MONTE CARLO CONTROL ALGORITHM FOR CART POLE BALANCING
 
-```
-#AADHEESHWAR A 212221230001
+```python
 import gymnasium as gym
 import numpy as np
 from itertools import count
@@ -96,7 +95,7 @@ def generate_trajectory(
 
 ## MONTE CARLO CONTROL FUNCTION
 
-```
+```python
 def mc_control (env,n_bins=g_bins, gamma = 1.0,
                 init_alpha = 0.5,min_alpha = 0.01, alpha_decay_ratio = 0.5,
                 init_epsilon = 1.0, min_epsilon = 0.1, epsilon_decay_ratio = 0.9,
@@ -161,9 +160,11 @@ def mc_control (env,n_bins=g_bins, gamma = 1.0,
 ## OUTPUT:
 
 1. Specify the average number of steps achieved within two minutes when the Monte Carlo (MC) control algorithm is initiated with zero-initialized Q-values.
-   ![](1.png)
+   ![image](https://github.com/user-attachments/assets/3a62d488-85a7-4a39-9b3c-563e51694473)
+
 2. Mention the average number of steps maintained over a four-minute period when the Monte Carlo (MC) control algorithm is executed with pretrained Q-values.
-   ![](2.png)
+  ![image](https://github.com/user-attachments/assets/e35c5a95-0f18-4442-9b48-c0d22fd5b931)
+
 
 ## RESULT:
 
